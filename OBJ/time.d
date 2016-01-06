@@ -1,0 +1,12 @@
+..\obj\time.o: ..\HEADWARE\TIME.c
+..\obj\time.o: ..\HEADWARE\TIME.h
+..\obj\time.o: ..\SYSTEM\sys\sys.h
+..\obj\time.o: ..\SYSTEM\sys\stm32f10x.h
+..\obj\time.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm3.h
+..\obj\time.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+..\obj\time.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h
+..\obj\time.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h
+..\obj\time.o: ..\SYSTEM\sys\system_stm32f10x.h
+..\obj\time.o: ..\HEADWARE\CSB.h
+..\obj\time.o: ..\HEADWARE\led.h
+..\obj\time.o: ..\SYSTEM\delay\delay.h
