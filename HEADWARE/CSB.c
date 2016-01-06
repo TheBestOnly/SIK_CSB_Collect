@@ -5,12 +5,17 @@
 //超声波初始化
 void CSB_Init(void)
 {
-	RCC->APB2ENR |= 1<<3; //使能PB；
+	RCC->APB2ENR |= 1<<3|1<<2; //使能PB/PA；
 	
-	GPIOB -> CRL &= 0xFFFFFFF0;
-	GPIOB -> CRL |= 0x00000003;	//PB0推挽输出，用于发送Trig波形；
+	GPIOB -> CRH &= 0xFFFFFF00;
+	GPIOB -> CRH |= 0x00000033;	//PB8/PB9推挽输出，用于发送Trig波形；
 	
-	GPIOB -> ODR &=~(1<<0); 	//初始化PB0=0；
+	GPIOA -> CRL &= 0xFF00FF0F;
+	GPIOA -> CRL |= 0x00330030;	//PA1/PA4/A5推挽输出，用于发送Trig波形；
+	
+	
+	GPIOB -> ODR &=~(1<<8|1<<9); 	//初始化PB8/PB9=0；
+	GPIOA -> ODR &=~(1<<1|1<<4|1<<5); 	//初始化 PA1/PA4/PA5=0；
 	
 	Tim1_Init(5999,719);		//使能定时器1,10ms进一次中断，用于产生驱动超声波的驱动波形；
 	

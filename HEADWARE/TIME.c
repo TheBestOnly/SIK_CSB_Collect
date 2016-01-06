@@ -18,9 +18,17 @@ void TIM1_UP_IRQHandler(void)
 {
 	if(TIM1->SR & 0x0001)
 	{
-		Trig=1;
-		delay_us(10);
-		Trig=0;
+		Trig1=1;
+		Trig2=1;
+		Trig3=1;
+		Trig4=1;
+		Trig5=1;
+		delay_us(12);
+		Trig1=0;
+		Trig2=0;
+		Trig3=0;
+		Trig4=0;
+		Trig5=0;
 //		Trig =~Trig;
 	}
 	
@@ -55,6 +63,9 @@ void TIM3_Init(u16 arr,u16 psc)
 	MY_NVIC_Init(2,0,TIM3_IRQn,2);//抢占 2，子优先级 0，组 2
 	
 }
+
+
+
 
 u8  TIM3CH4_CAPTURE_STA=0; //输入捕获状态 
 u16 TIM3CH4_CAPTURE_VAL;//输入捕获值

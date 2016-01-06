@@ -3,9 +3,9 @@
 
 #include"sys.h"
 
-#define LED0 PAout(15)
-#define LED1 PBout(3)
-#define LED2 PBout(4)
+#define LED0 PBout(14)
+//#define LED1 PBout(3)
+//#define LED2 PBout(4)
 
 void Led_Init(void);
 

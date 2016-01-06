@@ -202,7 +202,6 @@ void USB_LP_CAN1_RX0_IRQHandler(void)
     printf("rxbuf[6]:%d\r\n",rxbuf[6]);
     printf("rxbuf[7]:%d\r\n",rxbuf[7]);
 	
-	LED2=~LED2;
 }
 
 

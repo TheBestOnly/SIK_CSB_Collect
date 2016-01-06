@@ -457,6 +457,16 @@
               <FileType>1</FileType>
               <FilePath>..\HEADWARE\can.c</FilePath>
             </File>
+            <File>
+              <FileName>CSB.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HEADWARE\CSB.c</FilePath>
+            </File>
+            <File>
+              <FileName>TIME.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HEADWARE\TIME.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

@@ -23,23 +23,14 @@ int main()
 	Led_Init();
 	CSB_Init();	
 	uart_init(72,115200);	 	//串口初始化为9600
-    CAN1_Init(1,8,15,15,mode);	//CAN普通模式初始化,普通模式,波特率100Kbps
+  CAN1_Init(1,8,15,15,mode);	//CAN普通模式初始化,普通模式,波特率100Kbps
 	
 	
 	while(1)
 	{
 		
-		temp=CSB_Cal();
-		
-//		Tx_Dat[0]=temp>>8;
-//		Tx_Dat[1]=temp&0x0ff;
-		
-		Can_Send_Msg(Tx_Dat,2);
-		
-//		t=(Tx_Dat[0]<<8)|Tx_Dat[1];
-//		printf("%x,	%x,	%d\n",Tx_Dat[0],Tx_Dat[1],t);	
-		printf("%d\n",temp);			
-		delay_ms(100);
+		LED0=~LED0;
+		delay_ms(500);
 		
 	}
 }
