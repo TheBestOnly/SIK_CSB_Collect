@@ -14,7 +14,7 @@
 int main()
 {
 	u8 mode=0;	//CAN工作模式;0,普通模式;1,环回模式
-	u8 Tx_Dat[4];
+	u16 Tx_Dat[4]={213,235,55,33};
 	u16 temp,t;
 	
 	
@@ -23,14 +23,15 @@ int main()
 	Led_Init();
 	CSB_Init();	
 	uart_init(72,115200);	 	//串口初始化为9600
-  CAN1_Init(1,8,15,15,mode);	//CAN普通模式初始化,普通模式,波特率100Kbps
+    CAN1_Init(1,8,15,15,mode);	//CAN普通模式初始化,普通模式,波特率100Kbps
 	
 	
 	while(1)
 	{
-		
-		LED0=~LED0;
+		CSB_Cal();
+	//	LED0=~LED0;
 		delay_ms(500);
+		printf("asd");
 		
 	}
 }

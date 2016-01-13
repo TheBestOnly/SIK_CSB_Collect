@@ -4,39 +4,42 @@
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
 D:\stm32f103-P\stm32f103\RES_Version\SIK_Collect\USER\led.uvproj
-Project File Date:  11/03/2015
+Project File Date:  01/06/2016
 
 <h2>Output:</h2>
 Build target 'Target 1'
-compiling main.c...
-..\HEADWARE\CSB.h(14): warning:  #1295-D: Deprecated declaration CSB_Cal - give arg types
-  u16 CSB_Cal();
-main.c(17): warning:  #177-D: variable "Tx_Dat" was declared but never referenced
-        u8 Tx_Dat[4];
+linking...
+Program Size: Code=7756 RO-data=276 RW-data=28 ZI-data=3444  
+FromELF: creating hex file...
+"..\OBJ\led.axf" - 0 Error(s), 0 Warning(s).
+</pre>
+</body>
+</html>
+ was declared but never referenced
+        u16 Tx_Dat[4]={213,235,55,33};
 main.c(18): warning:  #177-D: variable "temp" was declared but never referenced
         u16 temp,t;
 main.c(18): warning:  #177-D: variable "t" was declared but never referenced
         u16 temp,t;
 main.c: 4 warnings, 0 errors
-compiling CSB.c...
-..\HEADWARE\csb.h(14): warning:  #1295-D: Deprecated declaration CSB_Cal - give arg types
-  u16 CSB_Cal();
-..\HEADWARE\CSB.c: 1 warning, 0 errors
-compiling TIME.c...
-..\HEADWARE\CSB.h(14): warning:  #1295-D: Deprecated declaration CSB_Cal - give arg types
-  u16 CSB_Cal();
-..\HEADWARE\TIME.c: 1 warning, 0 errors
 linking...
-Program Size: Code=6764 RO-data=268 RW-data=16 ZI-data=1912  
+Program Size: Code=7756 RO-data=276 RW-data=28 ZI-data=3444  
 FromELF: creating hex file...
-"..\OBJ\led.axf" - 0 Error(s), 6 Warning(s).
-</pre>
-</body>
-</html>
-cated declaration CSB_Cal - give arg types
-  u16 CSB_Cal();
+"..\OBJ\led.axf" - 0 Error(s), 4 Warning(s).
+Load "..\\OBJ\\led.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+): error:  #28: expression must have a constant value
+          unsigned int Sum_f[sum];
+..\HEADWARE\CSB.c(83): warning:  #177-D: variable "temp_f" was declared but never referenced
+          unsigned int  temp_f;
+..\HEADWARE\CSB.c: 3 warnings, 1 error
+compiling TIME.c...
+..\HEADWARE\CSB.h(16): warning:  #1295-D: Deprecated declaration CSB_Cal - give arg types
+  void CSB_Cal();
 ..\HEADWARE\TIME.c: 1 warning, 0 errors
-"..\OBJ\led.axf" - 1 Error(s), 7 Warning(s).
+"..\OBJ\led.axf" - 1 Error(s), 8 Warning(s).
 Target not created
-.\OBJ\led.axf" - 1 Error(s), 7 Warning(s).
-Target not created
+0 Error(s), 7 Warning(s).

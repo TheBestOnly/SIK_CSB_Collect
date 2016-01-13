@@ -7,9 +7,14 @@
 #include "delay.h"
 
 
+extern u8 TIM3CH1_CAPTURE_STA; //输入捕获状态 
+extern u16 TIM3CH1_CAPTURE_VAL;//输入捕获值
+extern u8 TIM3CH2_CAPTURE_STA; //输入捕获状态 
+extern u16 TIM3CH2_CAPTURE_VAL;//输入捕获值
+extern u8 TIM3CH3_CAPTURE_STA; //输入捕获状态 
+extern u16 TIM3CH3_CAPTURE_VAL;//输入捕获值
 extern u8 TIM3CH4_CAPTURE_STA; //输入捕获状态 
 extern u16 TIM3CH4_CAPTURE_VAL;//输入捕获值
-
 
 
 void Tim1_Init(u16 arr,u16 psc);
